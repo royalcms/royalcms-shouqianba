@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9"
+        "php": ">=5.5.9",
+        "royalcms/pay": "^5.1"
     },
     "autoload": {
         "psr-4": {
