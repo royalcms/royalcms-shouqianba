@@ -108,7 +108,7 @@ class Shouqianba implements GatewayApplicationInterface
     {
         $this->payload = $order;
 
-        $gateway = get_class($this).'\\'.Str::studly('refund').'Gateway';
+        $gateway = get_class($this).'\\Gateways\\'.Str::studly('refund').'Gateway';
 
         if (class_exists($gateway)) {
             return $this->makePay($gateway);
